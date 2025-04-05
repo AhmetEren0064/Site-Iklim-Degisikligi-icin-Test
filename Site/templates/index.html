@@ -21,8 +21,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0" method="post">
-            <input class="form-control mr-sm-2" type="search" name="UserName" placeholder="Kullanıcı Adın" aria-label="Search">
-            <input class="form-control mr-sm-2" type="search" name="Password" placeholder="Şifren" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" name="UserName" placeholder="Kullanıcı Adın" aria-label="Search" maxlength="12">
+            <input class="form-control mr-sm-2" type="search" name="Password" placeholder="Şifren" aria-label="Search" maxlength="12">
             <button class="btn btn-outline-success my-2 my-sm-0 mr-2 bg-light" type="submit">Giriş</button>
             <p></p>
             <button class="btn btn-outline-success my-2 my-sm-0 bg-light" type="submit">Kayıt</button>
@@ -43,10 +43,10 @@
     <br>
 
     <div style="display: flex; align-items: center; justify-content: center;">
-        <form action="/adviceCards" method="post" class="form-inline my-2 my-lg-0">
-            <button type="button" class="btn btn-secondary mr-5" name="i_do_already" value="clicked"><h2>Zaten Yapıyorum</h2></button>
-            <button type="button" class="btn btn-success" name="ive_did" value="clicked"><h2>Yaptım!</h2></button>
-            <button type="button" class="btn btn-danger ml-5" name="another" value="clicked"><h2>Başka Kart</h2></button>
+        <form action="./" method="post" class="form-inline my-2 my-lg-0">
+            <a href="./" type="button" class="btn btn-secondary mr-5" name="i_do_already" value="clicked"><h2>Zaten Yapıyorum</h2></a>
+            <button class="btn btn-success" type="submit" name="ive_did" value="clicked"><h2>Not ettim Yapacağım!</h2></button>
+            <a href="./" type="button" class="btn btn-danger ml-5" name="another" value="clicked"><h2>Başka Kart</h2></a>
         </form>
     </div>
   {% endblock %}
